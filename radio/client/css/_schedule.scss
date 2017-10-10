@@ -1,0 +1,104 @@
+/* ===== SCHEDULE PAGE ===== */
+.schedule-container {
+    width: 1150px;
+    // margin: 287px auto 150px auto;
+    padding: 50px 0;
+
+    .main-content {
+        width: 485px;
+        margin: 0 auto;
+
+        h2 {
+            font-family: $font-secondary;
+            font-size: 38px;
+            color: #fff;
+            text-transform: $text-up;
+            margin: 0 0 15px 0;
+        }
+        .sch-scroll {
+            max-height: 270px;
+            position: relative;
+            overflow: auto;
+            padding: 0;
+
+            table > tbody > tr {
+                td {
+                    padding: 5px 0;
+                    font-size: 16px;
+                }
+                td.sch-time {
+                    width: 23%;
+                    font-weight: bold;
+                    font-family: $font-secondary;
+                    font-size: 16px;
+                    color: #fff;
+                }
+                td.sch-title {
+                    font-family: $font-secondary;
+                    font-style: italic;
+                    color: rgba(255, 255, 255, 0.75);
+                }
+            }
+        }
+        li.sch-item {
+            padding: 10px 0;
+            clear: both;
+        }
+        li.sch-item:first-child {
+            padding: 0 0 10px 0;
+            clear: both;
+            list-style: none;
+        }
+        li.sch-item:last-child {
+            padding: 10px 0 0 0;
+            clear: both;
+        }
+        .sch-time {
+            width: 20%;
+            span {
+                font-weight: bold;
+                font-family: $font-secondary;
+                font-size: 16px;
+                color: #fff;
+            }
+        }
+        .sch-title {
+            span {
+                font-family: $font-secondary;
+                font-style: italic;
+                color: rgba(255, 255, 255, 0.75);
+            }
+        }
+        .actions {
+            display: block;
+            margin-bottom: 20px;
+            text-align: right;
+
+            a {
+                margin-right: 4px;
+                padding: 3px 6px;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+
+.sch-tab-select {
+    border-radius: 0;
+    width: 90%;
+    margin: 0px 0 20px 0;
+}
+
+@media (max-width: 992px) {
+    .schedule-container {
+        width: initial;
+    }
+}
+
+@media only screen and (max-device-width: 767px) {
+    .schedule-container {
+        width: 100%;
+        padding: 20px 15px;
+    }
+}

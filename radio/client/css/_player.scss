@@ -1,0 +1,175 @@
+/* ===== PLAYER ===== */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.audio-player-wrap {
+    position: relative;
+    top: -30px;
+    // top: -16px;
+}
+
+.mejs-container {
+    background: transparent;
+    outline: none;
+    float: left;
+    width: 100% !important;
+}
+
+.mejs-container .mejs-controls {
+    background: transparent;
+    outline: none;
+    top: 5px;
+
+    div.mejs-time-rail {
+        width: 100% !important;
+    }
+    .mejs-time {
+        position: absolute;
+        top: 12px;
+        padding: 35px 0 0;
+    }
+    .mejs-button button {
+        margin: 0;
+    }
+    .mejs-play button, .mejs-pause button {
+        // left: -24px;
+        // top: 24px;
+        left: -38px;
+        top: 20px;
+        background-size: 250px;
+        width: 25px;
+        height: 25px;
+    }
+    .mejs-pause button {
+        background-position: 0 -26px;
+    }
+    .mejs-volume-button {
+        // position: absolute;
+        // right: 0;
+    }
+}
+
+.mejs-controls .mejs-time-rail {
+    .mejs-time-total {
+        width: 100%;
+        outline: none;
+    }
+    .mejs-time-loaded {
+        background: #929292 !important;
+        outline: none;
+    }
+    .mejs-time-current {
+        background: #c7c7c7 !important;
+    }
+    .mejs-time-total {
+        background: #727272 !important;
+        margin: 0;
+        width: 100% !important;
+    }
+    span, a {
+        @include border-radius(0 !important);
+        height: 3px;
+    }
+}
+
+.mejs-controls .mejs-volume-button {
+    position: absolute;
+    right: -32px;
+    top: 25px;
+}
+
+.mejs-time.mejs-duration-container {
+    right: 0;
+}
+
+.mejs-time span {
+    font-family: $font-secondary;
+    font-size: 13px;
+    color: rgba(243, 242, 242, 0.8);
+}
+
+.mute-icon {
+    margin: 3px 0 0 0;
+    width: 5%;
+}
+
+.mejs-controls .mejs-button button:focus {
+    outline: none;
+}
+
+.play-pause-extended {
+    margin: 1px 0 0 0;
+    width: 10%;
+    span {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    span:last-child {
+        margin-right: 0;
+    }
+}
+
+.fa-play {
+    background-image: url(/play.png);
+    background-size: 30px;
+    background-position: 0% 0%;
+    background-position: 2px 3px;
+    background-color: $orange-color;
+    width: 37px;
+    height: 37px;
+    @include border-radius(50%);
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.fa-pause {
+    background-image: url(/pause.png);
+    background-size: 25px;
+    background-position: 5px 6px;
+    background-color: $orange-color;
+    width: 37px;
+    height: 37px;
+    @include border-radius(50%);
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.mejs-container.stream-player {
+    width: 210px !important;
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+    display: none;
+}
+
+.stream-player {
+    .mejs-time-float {
+        display: none !important;
+    }
+}
+
+.live-title {
+    h2 {
+        font-size: 14px;
+        font-family: 'MakFuturis', sans-serif;
+        text-transform: uppercase;
+        color: rgba(243, 242, 242, 0.8);
+        margin-bottom: 3px;
+        font-weight: 400;
+    }
+
+    span.liveradio-slogan {
+        font-size: 13px;
+        font-family: 'MakFuturis', sans-serif;
+        color: rgba(255,255,255,0.5);
+        text-transform: none;
+    }
+}

@@ -1,0 +1,128 @@
+.live-box {
+    margin: 0;
+    line-height: 17px;
+    
+    span {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: $text-up;
+    }
+    
+    h2 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: $text-up;
+        margin: 0;
+    }
+}
+
+.live-wrapper {
+    position: absolute;
+    top: 45%;
+    background: url(/live_bg.png) no-repeat;    
+    width: 210px;
+    height: 210px;
+    .live-inner {
+        text-align: center;
+        color: #fff;
+        h4 {
+            margin: 30px 0;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        .live-player {
+            .live-title {
+                text-align: left;
+                margin: 40px 0;
+
+                h2 {
+                    color: #fff;
+                    font-family: 'MakFuturis', sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+            }
+        }
+        #play-audio {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            background: $orange-color;
+            border-radius: 50%;
+            font-size: 30px;
+            transition: 0.4s;
+            i {
+                color: #fff;
+                margin-left: 3px;
+            }
+            &:hover {
+                background: #fff;
+                i {
+                    color: $orange-color;
+                }
+            }
+        }
+    }
+}
+
+.live-box-outer {
+    background: url(/live_bg.png) no-repeat;
+    background-position: 0 55px;
+    height: auto;
+    width: 210px;
+    position: absolute;
+    top: 290px;
+    float: left;
+}
+
+.live-player {
+    clear: both;
+    
+    .live-text {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+    }
+
+    .play-button {
+        margin: 120px 0 0 87px;
+    }
+
+    .play {
+        span {
+            display: block;
+            width: 37px;
+            height: 37px;
+            background: $secondary-color;
+            line-height: 37px;
+            text-align: center;
+            @include border-radius(50%);
+        }
+        span i {
+            color: #FFF;
+        }
+    }
+
+    .main-player {
+        margin-top: 60px;
+        // margin-top: 125px;
+        .mejs-container .mejs-controls .mejs-time {
+            padding: 8px 0 0;
+        }
+        .audio-player-wrap {
+            position: relative;
+            top: 0px;
+        }
+    }
+}
+
+.player-box {
+    clear: both;
+    margin-top: 20px;
+    margin-left: 0;
+}

@@ -1,0 +1,49 @@
+{
+  "name": "business-radio-web",
+  "version": "1.0.0",
+  "description": "Business radio web",
+  "main": "index.js",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "meteor-node-stubs": "^0.2.3",
+    "moment": "^2.15.1",
+    "node-soundcloud": "0.0.6",
+    "react": "^15.3.2",
+    "react-addons-create-fragment": "^15.3.2",
+    "react-addons-css-transition-group": "^15.3.2",
+    "react-addons-linked-state-mixin": "^15.3.2",
+    "react-addons-perf": "^15.3.2",
+    "react-addons-pure-render-mixin": "^15.3.2",
+    "react-addons-test-utils": "^15.3.2",
+    "react-addons-transition-group": "^15.3.2",
+    "react-addons-update": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-komposer": "^1.13.1",
+    "react-mounter": "^1.2.0",
+    "soundcloud": "^3.1.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-import-resolver-meteor": "^0.3.1",
+    "eslint-plugin-import": "^1.13.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-meteor": "^4.0.0",
+    "eslint-plugin-react": "^6.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.nmma.co:Meteor/meteorcms.git"
+  },
+  "keywords": [
+    "business",
+    "radio",
+    "fm"
+  ],
+  "author": "Buyantogtokh",
+  "license": "ISC"
+}

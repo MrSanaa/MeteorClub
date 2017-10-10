@@ -1,0 +1,9 @@
+.second-layout {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	flex-direction: -webkit-column;
+	justify-content: space-between;
+	padding: 50px 0;
+	height: 100vh;
+}

@@ -1,0 +1,16 @@
+{
+    "public": {
+        "soundcloud": {
+            "userId": "106896902"
+        }
+    },
+    "private": {
+    	"soundcloud": {
+    		"clientId": "f93d4a30ede2ba3a347cb2356a8b4990",
+    		"clientSecret": "44bf51d1cf1391da86a8beb2643980b3",
+            "callbackUri": "http://localhost:3000/callback.html"
+    	}
+    },
+    "AWSAccessKeyId": "AKIAJOWF4E45K5GWM22Q",
+    "AWSSecretAccessKey": "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"
+}

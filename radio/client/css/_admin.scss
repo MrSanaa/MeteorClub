@@ -1,0 +1,72 @@
+
+.admin-container {
+	color: #555;
+
+	h1 {
+		margin-bottom: 40px;
+		color: $orange-color;
+		text-align: center;
+	}
+
+	button#upload {
+		margin-top: 20px;
+		border: 3px solid $orange-color;
+		background: #fff;
+		color: $orange-color;
+		font-weight: bold;
+		&:hover {
+			background: $orange-color;
+			color: #fff;
+		}
+	}
+
+	label {
+		display: block;
+		font-size: 16px;
+		color: #fff;
+	}
+	img.thumb {
+		width: 200px;
+		height: 200px;
+	}
+
+	.submit-buttons {
+		button {
+			border: 1px solid $orange-color;
+			border-radius: 4px;
+			padding: 6px 12px;
+			font-size: 14px;
+		}
+		.submit {
+			background: $orange-color;
+			color: #fff;
+			margin-right: 10px;
+			&:hover {
+				background: #fff;
+				color: $orange-color;
+			}
+		}
+		.cancel {
+			background: #fff;
+			color: $orange-color;
+		}
+	}
+	#form-conf {
+		width: 500px;
+		margin-left: 25%;
+	}
+} //end .admin-container
+
+.selectize-control {
+	padding: 0;
+	border: none;
+}
+
+.selectize-dropdown {
+	z-index: 9999;
+	padding: 0;
+
+	.selectize-dropdown-content {
+		background: #fff;
+	}
+}

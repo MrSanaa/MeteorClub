@@ -1,0 +1,228 @@
+/* ===== RESPONSIVE ===== */
+@media only screen and (min-device-width: 991px) and (max-device-width: 1170px) {
+    input.search-input {
+        min-width: 100px !important;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .home-container {
+        width: initial;
+        height: 600px;
+        margin: 0;
+        padding: 45px 0;
+        background: url('/bg_without_logo.jpg');
+    }
+    .content-box {
+        margin: 0 auto;
+        width: 210px;
+        float: none !important;
+    }
+    .live-box {
+        margin: 0;
+    }
+    .player-box {
+        margin-left: 0;
+    }
+    .live-box-outer {
+        margin: 0 auto;
+        width: 210px;
+        float: none !important;
+    }
+    .about-leftside {
+        width: 100%;
+    }
+    #logout, .create-new-link, #search-icon {
+      display: none;
+    }
+    .second-layout {
+      padding: 0;
+    }
+}
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 991px)  {
+    .home-container {
+        width: auto;
+    }
+    .cdetail-container .content-thumb, .track-detail {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    .home-container {
+        width: auto;
+    }
+    .content-thumb img {
+        width: initial;
+    }
+    .cdetail-container .content-desc {
+        // padding: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    input.search-input {
+        min-width: 100px !important;
+    }
+
+    .social {
+            padding: 15px 20px;
+    }
+    .player {
+        padding: 10px 45px;
+    }
+    .cdetail-container .playlist .item .info .desc {
+        float: left !important;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-leftside {
+        width: 100%;
+        height: initial;
+    }
+    .social {
+        margin: 20px 0 0 15px;
+    }
+    .content-thumb {
+        width: 200px !important;
+        height: 200px !important;
+        margin-top: 48px !important;
+    }
+    .home-container {
+        width: 100%;
+        height: 450px;
+        padding: 0 60px;
+        margin: 0;
+        background: url("/responsive_bg.png") no-repeat center 80px;
+    }
+    .live-box-outer {
+        background: url(/live_bg.png);
+        background-position: 0 55px;
+        height: auto;
+        width: 215px;
+        background-repeat: no-repeat;
+        position: relative;
+        margin: 0 auto;
+        top: 80px;
+        float: none;
+    }
+    .footer {
+        height: initial;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-menu-outer {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+    .social {
+        width: 100%;
+        padding: 10px;
+    }
+    .search {
+        width: 100%;
+        padding: 10px;
+    }
+    input.search-input {
+        min-width: 100px !important;
+    }
+    .footer-menu ul li {
+        display: block;
+        padding-top: 5px;
+    }
+    .footer-menu ul li:after {
+        content: '';
+    }
+    .search-form input.search-input {
+        display: block !important;
+        width: 90%;
+    }
+    .search-form label.search-label {
+        padding-top: 0;
+        display: inline-block;
+        position: relative;
+        top: 0;
+        margin-right: 9px;
+        float: left;
+    }
+    .footer-menu a {
+        margin-left: 40px;
+    }
+    .schedule-container {
+        margin: 25px auto 10px auto;
+        .main-content {
+            width: 100%;
+            margin: 0 auto 30px auto;
+        }
+        .main-content h2 {
+            font-size: 20px;
+        }
+    }
+    .content-scroll {
+        max-height: 560px;
+        position: relative;
+        overflow: auto;
+        margin: 15px 0 15px 0;
+    }
+    .cdetail-container .content-thumb {
+        margin: 0 auto;
+    }
+    .cdetail-container, .track-detail {
+        margin: 25px auto 0 auto;
+    }
+    .content-thumb {
+        margin-top: 8px;
+    }
+    .content-thumb img {
+        width: 100%;
+    }
+    .playlist {
+        max-height: 370px;
+        .item {
+            .player {
+                clear: both;
+            }
+            .info {
+                .thumb {
+                    width: 20% !important;
+                    min-width: initial !important;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .desc {
+                    width: 80% !important;
+                }
+            }
+            .social {
+                margin: 40px 0 0 5px;
+            }
+        }
+    }
+    .about-leftside {
+        .main-content {
+            width: 100%;
+            margin: 25px auto;
+        }
+    }
+    .about-tab-content .tab-pane {
+        padding: 0 20px;
+    }
+    .contact-info {
+        min-height: initial;
+    }
+    .footer-navigation {
+        margin: 0 0 0 3px;
+        span {
+            float: left !important;
+        }
+    }
+    .full-screen {
+        padding: 50px 0;
+    }
+}

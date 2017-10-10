@@ -1,0 +1,68 @@
+.created:before {
+    font-family: "Ionicons";
+    content: '\f26e';
+    color: $orange-color;
+    margin-right: 5px;
+}
+
+h3 {
+    color: $orange-color;
+}
+
+.created, .email {
+    color: $secondary-color;
+}
+.message {
+    margin: 30px 0 10px 0;
+}
+// message list
+.message-list-wrapper {
+
+    h1 {
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .message-list {
+        max-height: 600px;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        .message-item {
+            position: relative;
+            margin: 20px;
+            padding: 10px 0;
+            box-shadow: 10px 10px 50px 1px rgba(0, 0, 0, 0.52);
+
+            a {
+                padding: 0 15px;
+                display: block;
+                text-decoration: none;
+                color: #fff;
+
+                p {
+                    clear: both;
+                    overflow: hidden;
+                } 
+                &.delete {
+                    display: inline-block;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    padding: 2px 8px;                    
+                }
+            }
+        }
+    }
+}
+
+// message detail
+.message-detail {
+    padding: 10px 15px;
+    box-shadow: 10px 10px 50px 1px rgba(0, 0, 0, 0.52);
+    color: #fff;
+
+    .created {
+        @extend .created:before;
+    }
+}
